@@ -13,10 +13,17 @@ router.get('/', async (req, res) => {
     }
 });
 
+//post route for creating new users
 router.post('/', async (req, res) => {
+    /* body example:
+    {
+        "username": "example_username",
+        "password": "example_password"
+    }
+    */
     try {
-        User.create(req.body).then((product) => {
-            res.status(200).json(product);
+        User.create(req.body).then((user) => {
+            res.status(200).json(user);
         });
     } catch (err) {
         res.status(500).json(err);
