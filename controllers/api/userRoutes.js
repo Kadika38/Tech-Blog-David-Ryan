@@ -19,8 +19,7 @@ router.post('/', async (req, res) => {
     {
         "username": "example_username",
         "password": "example_password"
-    }
-    */
+    } */
     try {
         User.create(req.body).then((user) => {
             res.status(200).json(user);
