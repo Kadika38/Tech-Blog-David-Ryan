@@ -59,7 +59,18 @@ router.put('/:id', async (req, res) => {
             //this return useless data so I might go back and change this, but I might not because its also not necessary
             res.status(200).json(post);
         });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
+//post delete route
+router.delete('/:id', async (req, res) => {
+    try {
+        Post.destroy({where: { id: req.params.id } }).then((post) => {
+            //this return useless data so I might go back and change this, but I might not because its also not necessary
+            res.status(200).json(post);
+        });
     } catch (err) {
         res.status(500).json(err);
     }
