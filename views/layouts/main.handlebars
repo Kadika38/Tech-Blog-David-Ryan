@@ -4,17 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Tech Blog</title>
+  {{!-- Reset CSS --}}
+  <link rel="stylesheet" href="/css/reset.css">
+  {{!-- Stylesheet --}}
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <h1>I'm Scary Terry, Bitch!</h1>
-  <h3>I'm gonna get ya bitch!</h3>
+  <section id="topSec">
+    <div id="topSecInner" class="flexy">
+      <div class="topSecLink">
+        <button id="home">Home</button>
+      </div>
+      <div class="topSecLink">
+        <button id="dashboard">Dashboard</button>
+      </div>
+      {{#if logged_in}}
+      <div class="topSecLink">
+        <button id="logout">Logout</button>
+      </div>
+      {{/if}}
+      {{#unless logged_in}}
+      <div class="topSecLink">
+        <button id="login">Login</button>
+      </div>
+      {{/unless}}
+    </div>
+  </section>
 
   <main>
     {{{ body }}}
   </main>
+
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

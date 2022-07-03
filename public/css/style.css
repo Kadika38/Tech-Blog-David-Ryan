@@ -1,0 +1,40 @@
+:root {
+    --oneColor: #2A1A1F;
+    --twoColor: #FFCF99;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+.flexy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#topSec {
+    padding: 20px;
+    background-color: var(--oneColor);
+}
+
+#topSecInner {
+    width: 50%;
+}
+
+.topSecLink {
+    font-size: 30px;
+    color: var(--twoColor);
+    margin-left: 25px;
+    margin-right: 15px;
+}
