@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  {{!-- header looking section --}}
   <section id="topSec">
     <div id="topSecInner" class="flexy">
       <div class="topSecLink">
@@ -33,9 +34,14 @@
     </div>
   </section>
 
-  <main>
+  {{!-- title --}}
+  <section id="title" class="flexy">
+    <h1>The Tech Blog</h1>
+  </section>
+
+  <section id="mainSec">
     {{{ body }}}
-  </main>
+  </section>
 
   <script src="/js/main.js"></script>
 </body>
