@@ -4,6 +4,10 @@
     --twoColor: #FFCF99;
 }
 
+html {
+    background-color: var(--twoColor);
+}
+
 /* get rid of button decoration and styling */
 button {
     background: none;
@@ -71,4 +75,26 @@ h1 {
 .post {
     margin: 25px;
     border: 3px solid var(--oneColor);
+}
+
+.postUpper {
+    background-color: var(--oneColor);
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 5px;
+}
+
+.postHeadline {
+    color: var(--twoColor);
+    font-size: 25px;
+}
+
+.postInfo {
+    color: var(--twoColor);
+}
+
+.postLower {
+    padding: 5px;
+    font-size: 20px;
 }
