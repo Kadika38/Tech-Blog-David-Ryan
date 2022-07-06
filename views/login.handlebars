@@ -1,3 +1,26 @@
-<div>
-    loggy looggy lagin login
+<div class="flexy toCenter">
+    <div id="loginFormHolder" class="fullPadding-15">
+        <form>
+            <div class="flexy toCenter fullMargin-15">
+                <h2> Login </h2>
+            </div>
+            <div class="fullMargin-2">
+                <label for="username-login">Username:</label>
+                <input type="text" id="username-login"/>
+            </div>
+            <div class="fullMargin-2">
+                <label id="passwordLabel" for="password-login">Password:</label>
+                <input type="text" id="password-login"/>
+            </div>
+            <div class="flexy toCenter">
+                <button id="login-submit" class="fullMargin-15" type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="flexy toCenter">
+            <label id="toSignupLabel" for="toSignup">Need to create an account?  </label>
+            <button id="toSignup">Click here</button>
+        </div>
+    </div>
 </div>
+
+<script src="/js/login.js"></script>

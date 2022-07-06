@@ -24,6 +24,11 @@ button:focus {
     outline: none;
 }
 
+/* adjust input decoration and/or styling */
+input {
+    background: none;
+}
+
 /* placement */
 .flexy {
     display: flex;
@@ -32,6 +37,26 @@ button:focus {
 
 .toSides {
     justify-content: space-between;
+}
+
+.toCenter {
+    justify-content: center;
+}
+
+.fullMargin-2 {
+    margin: 2px;
+}
+
+.fullMargin-5 {
+    margin: 5px;
+}
+
+.fullMargin-15 {
+    margin: 15px;
+}
+
+.fullPadding-15 {
+    padding: 15px;
 }
 
 /* specifics */
@@ -97,4 +122,40 @@ h1 {
 .postLower {
     padding: 5px;
     font-size: 20px;
+}
+
+#loginFormHolder, #signupFormHolder {
+    border: solid;
+    border-radius: 5px;
+}
+
+#passwordLabel {
+    margin-right: 3px;
+}
+
+#login-submit, #signup-submit {
+    border: solid;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 18px;
+}
+
+#login-submit:hover, signup-submit:hover {
+    background-color: var(--oneColor);
+    color: var(--twoColor);
+}
+
+#toSignupLabel, #toLoginLabel {
+    padding: 5px;
+}
+
+#toSignup, #toLogin {
+    border: solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#toSignup:hover, #toLogin:hover {
+    background-color: var(--oneColor);
+    color: var(--twoColor);
 }
