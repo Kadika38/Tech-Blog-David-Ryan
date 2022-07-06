@@ -1,10 +1,23 @@
-<div>
-    dashboard
-    <button id="testbtn">amiloggedin?</button>
+{{#if posts}}
+{{#each posts as |post| }}
+<div class="post">
+    <div class="postUpper flexy toSides">
+        <div class="postHeadline">
+            {{post.headline}}
+        </div>
+        <div class="postInfo">
+            Posted on {{post.user_id}}
+        </div>
+    </div>
+    <div class="postLower">
+        {{post.content}}
+    </div>
 </div>
-
-{{#if logged_in}}
-<div>you are logged in</div>
+{{/each}}
 {{/if}}
+
+{{#unless posts}}
+<div>add posts!</div>
+{{/unless}}
 
 <script src="/js/dashboard.js"></script>
