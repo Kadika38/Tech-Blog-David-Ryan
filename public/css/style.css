@@ -159,3 +159,43 @@ h1 {
     background-color: var(--oneColor);
     color: var(--twoColor);
 }
+
+#newPostBtn {
+    border: solid;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 25px;
+    font-size: 25px;
+}
+
+#newPostBtn:hover {
+    background-color: var(--oneColor);
+    color: var(--twoColor);
+}
+
+#newPostFormHolder {
+    border: solid;
+    border-radius: 5px;
+}
+
+#post-submit {
+    border: solid;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 25px;
+    font-size: 25px;
+}
+
+#post-submit:hover {
+    background-color: var(--oneColor);
+    color: var(--twoColor);
+}
+
+#newpost-headline, #newpost-content {
+    background: none;
+}
+
+.update, .delete {
+    font-size: 15px;
+    margin-left: 15px;
+}

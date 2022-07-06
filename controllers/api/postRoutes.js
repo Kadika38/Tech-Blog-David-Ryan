@@ -42,6 +42,21 @@ router.post('/', async (req, res) => {
     }
 });
 
+//post route for creating posts but it gets the user_id from the express session
+router.post('/currentuser', async (req, res) => {
+    try {
+        Post.create({
+            user_id: req.session.user_id,
+            headline: req.body.headline,
+            content: req.body.content,
+        }).then((post) => {
+            res.status(200).json(post);
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 //post update route
 router.put('/:id', async (req, res) => {
     /* example body
