@@ -17,6 +17,8 @@ When you load the landing page, you see the homepage.  Buttons at the top offer 
 UNFINISHED
 - Posts don't currently show the time they were last updated.
 - Posts don't yet have a commenting system.
+
+NOTE
 Ran out of time.  Might update, but this is being submitted as is.
 
 
