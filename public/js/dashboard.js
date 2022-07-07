@@ -3,8 +3,10 @@ const newpost = () => {
 };
 
 const update = (event) => {
-    const el = event.target;
+    const postid = event.target.name;
+    const address = `/dashboard/post/${postid}`;
 
+    document.location.replace(address);
 }
 
 const deletePost = async (event) => {
@@ -21,8 +23,6 @@ const deletePost = async (event) => {
         alert('Failed to delete');
     }
 }
-
-
 
 document.querySelectorAll('.update').forEach(el => el.addEventListener('click', update));
 document.querySelectorAll('.delete').forEach(el => el.addEventListener('click', deletePost));

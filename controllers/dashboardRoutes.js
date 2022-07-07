@@ -36,4 +36,23 @@ router.get('/newpost', async (req, res) => {
     }
 });
 
+router.get('/post/:id', async (req, res) => {
+    try {
+        
+        const postData = await Post.findAll({
+            where: {
+                id: req.params.id
+            }
+        });
+
+        const posts = postData.map((project) => project.get({ plain: true }));
+        res.render('update-post', {
+            posts,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
+
 module.exports = router;

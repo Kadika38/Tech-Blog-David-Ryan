@@ -199,3 +199,26 @@ h1 {
     font-size: 15px;
     margin-left: 15px;
 }
+
+#updatePostFormHolder {
+    border: solid;
+    border-radius: 5px;
+}
+
+#save-submit {
+    border: solid;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 25px;
+    font-size: 25px;
+}
+
+#save-submit:hover {
+    background-color: var(--oneColor);
+    color: var(--twoColor);
+}
+
+#unlessLoggedIn {
+    font-size: 25px;
+    margin: 35px;
+}
