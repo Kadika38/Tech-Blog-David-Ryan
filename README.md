@@ -24,7 +24,7 @@ Ran out of time.  Might update, but this is being submitted as is.
 Deployed using Heroku at https://tech-blog-david-ryan.herokuapp.com/.
 
 ## Screenshot
-![Screenshot of Website](public/img/Screenshot 2022-07-06 204428.jpg)
+![Screenshot of Website](public/img/screenshot-techblog.jpg)
 
 ## License
 This repository is not licensed.
